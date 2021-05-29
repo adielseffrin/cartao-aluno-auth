@@ -1,12 +1,9 @@
-import React, {useContext} from 'react';
-import {firebaseAuth} from '../provider/AuthProvider'
+import Cartao from './Cartao/Cartao'
 
 const Home = (props) => {
-  const {handleSignout,} = useContext(firebaseAuth)
   return (
     <div>
-      Home, login successful!!!!!!
-      <button onClick={handleSignout}>sign out </button>
+      <Cartao />
     </div>
   );
 };

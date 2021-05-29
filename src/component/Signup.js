@@ -17,7 +17,7 @@ const Signup = (props) => {
     const {name, value} = e.target
     setInputs(prev => ({...prev, [name]: value}))
   }
-
+// TODO criar UI dessa tela
   return (
     <form onSubmit={handleSubmit}>
       {/* replace the div tags with a form tag */}

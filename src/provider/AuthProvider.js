@@ -4,7 +4,7 @@ import {authMethods} from '../firebase/authMethods'
 const AuthProvider = (props) => {
   const [inputs, setInputs] = useState({email: '', password: ''})
   const [errors, setErrors] = useState([])
-  const [token, setToken] = useState(null)
+  const [token, setToken] = useState(localStorage.getItem("token"))
 
   const handleSignup = () => {
     // middle man between firebase and signup 

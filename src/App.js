@@ -10,7 +10,6 @@ import './App.css';
 
 function App() {
   const {handleSignup, token} = useContext(firebaseAuth)
-  console.log(token)
   return (
     <>
     {/* switch allows switching which components render.  */}
